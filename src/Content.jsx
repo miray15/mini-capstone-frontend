@@ -5,6 +5,7 @@ import { ProductsNew } from "./ProductsNew";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
+import { ProductsShow } from "./ProductsShow";
 import { Modal } from "./Modal";
 
 export function Content() {
@@ -52,7 +53,7 @@ export function Content() {
       <ProductsNew onCreateProduct={handleCreateProduct} />
       <ProductsIndex products={products} onShowProduct={handleShowProduct} />
       <Modal show={isProductsShowVisible} onClose={handleClose}>
-        <h1>testtt</h1>
+        <ProductsShow product={currentProduct} />
       </Modal>
     </div>
   );
