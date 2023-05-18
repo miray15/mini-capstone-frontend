@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
+import { ProductsNew } from "./ProductsNew";
 
 export function Content() {
   const [products, setProducts] = useState([]);
@@ -17,6 +18,7 @@ export function Content() {
 
   return (
     <div>
+      <ProductsNew />
       <ProductsIndex products={products} />
     </div>
   );

@@ -1,4 +1,4 @@
-export function productsNew() {
+export function ProductsNew() {
   return (
     <div>
       <h1>New Product</h1>
