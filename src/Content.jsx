@@ -5,6 +5,7 @@ import { ProductsNew } from "./ProductsNew";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
+import { Modal } from "./Modal";
 
 export function Content() {
   const [products, setProducts] = useState([]);
@@ -37,6 +38,9 @@ export function Content() {
 
       <ProductsNew onCreateProduct={handleCreateProduct} />
       <ProductsIndex products={products} />
+      <Modal show={true}>
+        <h1>testtt</h1>
+      </Modal>
     </div>
   );
 }
