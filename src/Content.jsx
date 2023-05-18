@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductsNew } from "./ProductsNew";
 import { Signup } from "./Signup";
+import { Login } from "./Login";
 
 export function Content() {
   const [products, setProducts] = useState([]);
@@ -29,6 +30,7 @@ export function Content() {
 
   return (
     <div>
+      <Login />
       <Signup />
       <ProductsNew onCreateProduct={handleCreateProduct} />
       <ProductsIndex products={products} />
