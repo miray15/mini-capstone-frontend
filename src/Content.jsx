@@ -4,6 +4,7 @@ import { ProductsIndex } from "./ProductsIndex";
 import { ProductsNew } from "./ProductsNew";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
+import { LogoutLink } from "./LogoutLink";
 
 export function Content() {
   const [products, setProducts] = useState([]);
@@ -30,8 +31,10 @@ export function Content() {
 
   return (
     <div>
+      <LogoutLink />
       <Login />
       <Signup />
+
       <ProductsNew onCreateProduct={handleCreateProduct} />
       <ProductsIndex products={products} />
     </div>
