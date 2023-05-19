@@ -7,6 +7,8 @@ import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
 import { ProductsShow } from "./ProductsShow";
 import { Modal } from "./Modal";
+import { Routes, Route } from "react-router-dom";
+import { About } from "./About";
 
 export function Content() {
   const [products, setProducts] = useState([]);
@@ -75,9 +77,13 @@ export function Content() {
 
   return (
     <div>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+
+      <Signup />
       <LogoutLink />
       <Login />
-      <Signup />
       <ProductsIndex products={products} onShowProduct={handleShowProduct} />
       <ProductsNew onCreateProduct={handleCreateProduct} />
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
   return (
     <header>
@@ -41,6 +43,8 @@ export function Header() {
           </div>
         </div>
       </nav>
+
+      <Link to="/about">About</Link>
     </header>
   );
 }
