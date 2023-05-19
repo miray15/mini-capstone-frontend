@@ -78,9 +78,9 @@ export function Content() {
       <LogoutLink />
       <Login />
       <Signup />
-
-      <ProductsNew onCreateProduct={handleCreateProduct} />
       <ProductsIndex products={products} onShowProduct={handleShowProduct} />
+      <ProductsNew onCreateProduct={handleCreateProduct} />
+
       <Modal show={isProductsShowVisible} onClose={handleClose}>
         <ProductsShow
           product={currentProduct}
