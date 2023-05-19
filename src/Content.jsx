@@ -79,6 +79,7 @@ export function Content() {
     <div>
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path="/Signup" element={<About />} />
       </Routes>
 
       <Signup />

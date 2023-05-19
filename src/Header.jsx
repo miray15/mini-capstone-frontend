@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Signup } from "./Signup";
 
 export function Header() {
   return (
@@ -27,17 +28,14 @@ export function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
+                <a className="nav-link" href="/About">
+                  About
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Pricing
+                  Signup
                 </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
               </li>
             </ul>
           </div>
@@ -45,6 +43,7 @@ export function Header() {
       </nav>
 
       <Link to="/about">About</Link>
+      <Link to="/signup">signup</Link>
     </header>
   );
 }
