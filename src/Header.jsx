@@ -41,14 +41,6 @@ export function Header() {
           </div>
         </div>
       </nav>
-
-      {/* <Link to="/about">About</Link>
-      <br />
-      <Link to="/signup">signup</Link>
-      <br />
-
-      <Link to="/LogoutLink">logout</Link>
-      <br /> */}
     </header>
   );
 }

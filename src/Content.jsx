@@ -85,7 +85,6 @@ export function Content() {
         <Route path="/products/:id" element={<ProductsShowSeparate />} />
       </Routes>
 
-      <Signup />
       <LogoutLink />
       <Login />
       <ProductsIndex products={products} onShowProduct={handleShowProduct} />
