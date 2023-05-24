@@ -33,7 +33,7 @@ export function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/signup">
                   Signup
                 </a>
               </li>
@@ -42,8 +42,13 @@ export function Header() {
         </div>
       </nav>
 
-      <Link to="/about">About</Link>
+      {/* <Link to="/about">About</Link>
+      <br />
       <Link to="/signup">signup</Link>
+      <br />
+
+      <Link to="/LogoutLink">logout</Link>
+      <br /> */}
     </header>
   );
 }

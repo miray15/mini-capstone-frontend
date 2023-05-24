@@ -6,6 +6,7 @@ import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
 import { ProductsShow } from "./ProductsShow";
+import { ProductsShowSeparate } from "./ProductsShowSeparate";
 import { Modal } from "./Modal";
 import { Routes, Route } from "react-router-dom";
 import { About } from "./About";
@@ -76,10 +77,12 @@ export function Content() {
   useEffect(handleIndexProducts, []);
 
   return (
-    <div>
+    <div className="container">
       <Routes>
         <Route path="/about" element={<About />} />
-        <Route path="/Signup" element={<About />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Logout" element={<LogoutLink />} />
+        <Route path="/products/:id" element={<ProductsShowSeparate />} />
       </Routes>
 
       <Signup />
