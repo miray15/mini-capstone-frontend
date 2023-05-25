@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export function Signup() {
   const [errors, setErrors] = useState([]);
-
+  const [name, setName] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrors([]);

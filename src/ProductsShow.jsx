@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 export function ProductsShow(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
