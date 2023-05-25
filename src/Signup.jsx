@@ -4,6 +4,14 @@ import { useState } from "react";
 export function Signup() {
   const [errors, setErrors] = useState([]);
   const [name, setName] = useState("");
+  let nameLengthMessage;
+  if (name.length > 20) {
+    nameLengthMessage = (
+      <small id="too_long">Your name is too long make it shorter</small>
+    );
+  } else {
+    nameLengthMessage = <small>{20 - name.length} characters remaining</small>;
+  }
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrors([]);
